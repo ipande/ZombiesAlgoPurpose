@@ -1,3 +1,4 @@
+package src;
 
 import java.io.*;
 import java.util.StringTokenizer;
@@ -180,7 +181,10 @@ public class Graph
 		}
 	}
 	
-	
+	public List<Integer> greedyPath() {
+		
+		return null;
+	}
 	
 	/**
      * <br/> Process a request; return false if end of file. <br/>
@@ -287,15 +291,20 @@ public class Graph
          System.out.println( "File read..." );
          System.out.println( g.vertexMap.size( ) + " vertices" );
 
-         BufferedReader in = new BufferedReader( new InputStreamReader( System.in ) );
-         String source = "262";
-         String destination = "282";
+         System.out.println(g.greedyPath());
          
-         myProcessNavigationRequest(source, destination, g);
+         
+//         BufferedReader in = new BufferedReader( new InputStreamReader( System.in ) );
+//         String source = "262";
+//         String destination = "282";
+//         
+//         myProcessNavigationRequest(source, destination, g);
          
          
 //         while( processRequest( in, g ) )
 //             ;
 
 	}
+
+	
 }
